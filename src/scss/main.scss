@@ -1,4 +1,6 @@
 @use './mixins';
+@use './base';
+@use './globals';
 body {
   background: rgb(0, 255, 13);
 }
