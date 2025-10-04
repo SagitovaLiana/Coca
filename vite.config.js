@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: './src/index.html',
       },
+    },
   },
   plugins: [
     injectHTML(),

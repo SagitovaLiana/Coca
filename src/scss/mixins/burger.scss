@@ -1,6 +1,6 @@
 @mixin burger {
   --burger-width: 28px;
-  --burger-height: 22px;
+  --burger-height: 23px;
   --burger-line-height: 3px;
   position: relative;
   z-index: var(--z-index-3);
