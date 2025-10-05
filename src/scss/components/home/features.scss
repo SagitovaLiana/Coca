@@ -1,6 +1,9 @@
 .features {
   padding: 160px 0 94px;
 
+    @include small-tablet {
+    padding: 100px 0 64px;
+  }
   @include mobile {
     padding: 60px 0 64px;
   }
