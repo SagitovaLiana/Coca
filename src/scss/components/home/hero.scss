@@ -5,10 +5,6 @@
     padding: 154px 0 121px;
   }
 
-  @include mobile {
-    min-height: calc(100dvh - 109px);
-  }
-
   &__container {
     @include flex-justify-between;
     align-items: flex-end;

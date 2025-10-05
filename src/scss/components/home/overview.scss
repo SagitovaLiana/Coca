@@ -16,6 +16,12 @@
     font-weight: 600;
     letter-spacing: -0.04em;
     color: #fff;
+
+    @include mini-desktop{
+      text-align: center;
+      // max-width: none;
+      margin: 0 auto 24px;
+    }
   }
 
   &__descr {
@@ -24,6 +30,11 @@
     font-weight: 500;
     line-height: 150%;
     color: var(--neutral-color-150);
+
+    @include mini-desktop{
+      text-align: center;
+      max-width: none;
+    }
 
     @include tablet {
       margin-bottom: 60px;
