@@ -26,5 +26,8 @@
     "vite-plugin-html-inject": "^1.1.2",
     "vite-plugin-image-optimizer": "^2.0.2",
     "vite-plugin-minify": "^2.1.0"
+  },
+  "dependencies": {
+    "swiper": "^12.0.2"
   }
 }
