@@ -72,6 +72,11 @@ label {
   padding: 0 var(--container-padding);
   max-width: calc(var(--container-width) + (var(--container-padding) * 2));
 }
+.container-article {
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  max-width: calc(var(--container-width-article) + (var(--container-padding) * 2));
+}
 
 .hidden {
   font-size: 0;

@@ -1,0 +1,120 @@
+.article {
+  padding: 200px 0;
+  @include small-tablet {
+    padding: 120px 0;
+  }
+  &__title {
+    margin-bottom: 80px;
+    max-width: 907px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+    @include small-tablet {
+      margin-bottom: 50px;
+    }
+  }
+  &__info {
+    @include flex-justify-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 24px;
+    &-author {
+      @include flex-align-center;
+      gap: 24px;
+      &-name {
+        margin-bottom: 4px;
+        font-weight: 600;
+        line-height: 1.44444;
+        color: var(--neutral-color-100);
+      }
+      &-position {
+        font-weight: 500;
+        line-height: 1.625;
+        color: var(--neutral-color-150);
+      }
+      @include mobile {
+      display: none;
+    }
+    }
+    &-date {
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--neutral-color-150);
+    }
+  }
+  &__img {
+    margin-bottom: 80px;
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__p1,
+  &__p2 {
+    margin-bottom: 54px;
+    font-weight: 400;
+    line-height: 1.77778;
+    color: var(--neutral-color-100);
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--neutral-color-100);
+  }
+  &__author {
+    @include flex-justify-between;
+    gap: 48px;
+    @include mobile {
+      flex-direction: column;
+    }
+    &-img {
+      max-height: 200px;
+    }
+    &-desc {
+      &-socials {
+        @include flex-align-center;
+        gap: 32px;
+        margin-bottom: 14px;
+        &-link svg path {
+          fill: var(--neutral-color-100);
+        }
+        &-text {
+          font-weight: 500;
+          line-height: 1.625;
+          color: var(--neutral-color-100);
+          @include small-tablet {
+            display: none;
+          }
+        }
+      }
+      &-span {
+        margin-bottom: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--neutral-color-150);
+      }
+      &-name {
+        margin-bottom: 16px;
+        font-weight: 600;
+        line-height: 1.3125;
+        letter-spacing: -0.03em;
+        color: var(--neutral-color-100);
+      }
+      &-position {
+        margin-bottom: 16px;
+        font-weight: 500;
+        line-height: 1.625;
+        color: var(--neutral-color-150);
+      }
+      &-text {
+        font-weight: 400;
+        line-height: 1.77778;
+        color: var(--neutral-color-100);
+      }
+    }
+  }
+}
