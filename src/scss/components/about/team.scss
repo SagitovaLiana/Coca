@@ -1,0 +1,100 @@
+.team {
+  padding: 160px 0;
+  @include tablet{
+    padding: 100px 0;
+  }
+  @include mobile{
+    padding: 60px 0;
+  }
+  &__title {
+    margin-bottom: 24px;
+    max-width: 703px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+  }
+  &__desc {
+    margin-bottom: 80px;
+    max-width: 534px;
+    font-weight: 500;
+    line-height: 1.77778;
+    color: var(--neutral-color-150);
+    @include mobile{
+    margin-bottom: 40px;
+  }
+  }
+  &__members {
+    position: relative;
+    margin-bottom: 100px;
+    @include mobile{
+    margin-bottom: 50px;
+  }
+    &-btns {
+      top: 178px;
+      left: 354px;
+      @include small-tablet{
+        display:none;
+      }
+    }
+  }
+  &__member {
+    max-width: 379px;
+    &-img {
+      margin-bottom: 16px;
+    }
+    &-info {
+      @include flex-justify-between;
+      align-items: start;
+    }
+    &-name {
+      margin-bottom: 8px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--neutral-color-100);
+    }
+    &-position {
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--neutral-color-150);
+    }
+    &-socials {
+      @include flex-align-center;
+      gap: 8px;
+      &-link svg path{
+        fill: var(--neutral-color-100)
+      }
+    }
+  }
+  &__join {
+    @include flex-all-between;
+    gap: 20px;
+    @include mobile{
+      flex-direction: column;
+    }
+    &-title {
+      max-width: 626px;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+    }
+    &-cta {
+      &-desc {
+        max-width: 506px;
+        margin-bottom: 24px;
+        font-weight: 500;
+        line-height: 1.77778;
+        color: var(--neutral-color-150);
+      }
+      &-link {
+        font-weight: 600;
+        line-height: 1.5;
+        color: var(--neutral-color-100);
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

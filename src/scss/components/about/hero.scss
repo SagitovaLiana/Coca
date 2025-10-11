@@ -1,0 +1,117 @@
+.hero {
+  padding: 221px 0 168px;
+
+  @include tablet{
+    padding: 130px 0 90px;
+  }
+
+  &__title {
+    margin-bottom: 115px;
+    max-width: 959px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+    @include tablet{
+      margin-bottom: 80px;
+    }
+    @include small-tablet{
+      margin-bottom: 50px;
+    }
+    @include mobile{
+      margin-bottom: 25px;
+    }
+  }
+
+  &__bottom {
+    @include flex-all-between;
+    margin-bottom: 133px;
+    gap: 30px;
+    @include tablet{
+      margin-bottom: 80px;
+    }
+    @include tablet{
+      margin-bottom: 40px;
+    }
+  }
+  &__subtitle {
+    max-width: 838px;
+    @include small-tablet{
+      font-size: 26px;
+    }
+    @include mobile{
+      font-size: 16px;
+    }
+  }
+  &__btn {
+    position: relative;
+    @include small-tablet{
+      display: none;
+    }
+    &-text {
+      & svg path {
+        fill: var(--neutral-color-100);
+      }
+    }
+    &-arrow {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      bottom: 50%;
+      & svg rect {
+        fill: var(--neutral-color-100);
+      }
+    }
+  }
+}
+.about {
+  &__slider {
+    position: relative;
+    margin-right: -122px !important;
+    @include mini-desktop{
+      margin-right: 0 !important;
+    }
+    &-btns {
+      top: 113px;
+      left: 477px;
+    }
+  }
+  &__slide {
+    max-width: 502px;
+    &-title {
+      margin-top: 24px;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+      color: var(--neutral-color-100);
+      @include mobile{
+        margin-top: 8px;
+        font-size: 18px;
+      }
+    }
+    &-text {
+      margin-bottom: 32px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      line-height: 1.77778;
+      color: var(--neutral-color-150);
+      display: -webkit-box;
+      -webkit-line-clamp: 3; 
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @include mobile{
+        -webkit-line-clamp: 2; 
+        line-height: 1.3;
+        margin-bottom: 20px;
+      }
+    }
+    &-button{
+      color: var(--neutral-color-10);
+      background-color: var(--neutral-color-100);
+      padding: 16px 34px;
+          @include mobile{
+      padding: 13px 24px;
+      }
+    }
+  }
+}

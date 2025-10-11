@@ -1,0 +1,43 @@
+.idea {
+  position: relative;
+  &.hero-decor {
+    &::before {
+      top: -400px;
+      left: 0;
+    }
+    &::after{
+      top: 200px;
+    }
+  }
+  &__wrapper {
+    @include flex-all-between;
+    gap: 30px;
+    padding: 80px 0;
+    border-top: 1px solid var(--neutral-color-30);
+    border-bottom: 1px solid var(--neutral-color-30);
+    @include mini-desktop {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    max-width: 480px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+    @include mini-desktop {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  &__text {
+    max-width: 522px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--neutral-color-100);
+    @include mini-desktop {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

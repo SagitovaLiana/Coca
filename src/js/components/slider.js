@@ -28,3 +28,33 @@ export const useTestimonialsSlider = () => {
     },
   });
 };
+
+export const useAboutsSlider = () => {
+  new Swiper('.about__slider', {
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+      577: {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+      },
+    },
+  });
+};
+
+export const useTeamSlider = () => {
+  new Swiper('.team__members', {
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+      577: {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+      },
+    },
+  });
+};

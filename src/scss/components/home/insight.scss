@@ -45,15 +45,8 @@
     position: relative;
 
     &-btns {
-      @include flex-all-center;
-      position: absolute;
       top: 126px;
       left: 50%;
-      z-index: var(--z-index-2);
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      background-color: #fff;
       transform: translateX(-50%);
 
       @include tablet {
