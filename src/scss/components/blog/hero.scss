@@ -1,8 +1,11 @@
 .hero {
   padding: 213px 0 168px;
   @include small-tablet {
-    padding: 150px 0 130px;
+    padding: 150px 0 110px;
   }
+  @include mobile{
+   padding: 115px 0 50px;
+}
   &-decor::after {
     top: 380px;
   }

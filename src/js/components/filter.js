@@ -6,7 +6,9 @@ export const initBlogFilterWithSwiper = () => {
 
   filterButtons.forEach((button) => {
     button.addEventListener('click', function () {
-      filterButtons.forEach(btn => btn.classList.remove('blog__filter-btn-active'));
+      filterButtons.forEach((btn) =>
+        btn.classList.remove('blog__filter-btn-active'),
+      );
       this.classList.add('blog__filter-btn-active');
       const filterValue = this.getAttribute('data-filter');
       filterSwiperSlides(filterValue);
@@ -26,8 +28,6 @@ export const initBlogFilterWithSwiper = () => {
         slide.classList.add('hidden');
       }
     });
-
-    // Используем импортированный blogSwiper
     setTimeout(() => {
       if (useBlogSlider) {
         useBlogSlider.update();
