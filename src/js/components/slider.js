@@ -58,3 +58,17 @@ export const useTeamSlider = () => {
     },
   });
 };
+export const useBlogSlider = () => {
+  new Swiper('.blog__slider', {
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+      577: {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+      },
+    },
+  });
+};

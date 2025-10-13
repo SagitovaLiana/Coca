@@ -1,0 +1,104 @@
+.hero {
+  padding: 213px 0 168px;
+  @include small-tablet {
+    padding: 150px 0 130px;
+  }
+  &-decor::after {
+    top: 380px;
+  }
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 130px;
+    @include small-tablet {
+      margin-bottom: 50px;
+    }
+    @include mobile {
+      font-size: 17px;
+    }
+  }
+}
+.blog {
+  &__filter {
+    @include flex-align-center;
+    gap: 16px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    @include small-tablet {
+      gap: 3px;
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      margin-bottom: 20px;
+    }
+    &-btn {
+      padding: 10px 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--neutral-color-150);
+      @include mobile {
+        padding: 5px 7px;
+      }
+      &-active {
+        font-weight: 600;
+        color: var(--neutral-color-100);
+        text-decoration: underline;
+        text-decoration-color: var(--neutral-color-100);
+        text-decoration-thickness: 2px;
+      }
+    }
+  }
+  &__slider {
+    margin-right: -122px !important;
+    @include small-desktop {
+      margin-right: 0 !important;
+    }
+    &-btns {
+      top: 179px;
+      left: 489px;
+    }
+  }
+  &__slide {
+    max-width: 515px;
+    &-img {
+      margin-bottom: 16px;
+      max-height: 428px;
+    }
+    &-date {
+      margin-bottom: 24px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--neutral-color-150);
+      @include mobile {
+        margin-bottom: 16px;
+      }
+    }
+    &-title {
+      margin-bottom: 16px;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+      @include mobile {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
+    &-desc {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--neutral-color-150);
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+}
