@@ -58,3 +58,39 @@ export const useTeamSlider = () => {
     },
   });
 };
+export const useBlogSlider = () => {
+  new Swiper('.blog__slider', {
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+      577: {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+      },
+    },
+  });
+};
+
+export const useArticlesSlider = () => {
+  new Swiper('.articles__slider', {
+    modules: [Navigation],
+    loop: true,
+    slidesPerView: 'auto',
+    navigation: {
+      prevEl: '.articles__top-btn--prev',
+      nextEl: '.articles__top-btn--next',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+      577: {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+      },
+    },
+  });
+};
